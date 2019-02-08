@@ -27,7 +27,7 @@ myConnector.getSchema = function (schemaCallback) {
     schemaCallback([tableSchema]);
 };
 myConnector.getData = function(table, doneCallback) {
-    $.getJSON("https://mundipharma-clinipace.mdsol.com/ravewebservices/datasets/V_BUP14_CN_301_lab.csv", function(resp) {
+    $.getJSON("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson", function(resp) {
         var feat = resp.features,
             tableData = [];
 
